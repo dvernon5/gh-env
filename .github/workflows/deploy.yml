@@ -6,6 +6,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.2tbl6oj.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MoNGODB_USERNAME }}
